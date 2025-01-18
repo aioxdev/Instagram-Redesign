@@ -1,0 +1,73 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:components="clr-namespace:InstagramReDesign.Components;assembly=InstagramReDesign"
+			 mc:Ignorable="d"
+             x:Class="InstagramReDesign.Components.Feeds">
+
+	<Grid RowDefinitions="Auto,*">
+		<Grid Grid.Row="0">
+			<TextBlock Classes="h1" Text="Feed"/>
+		</Grid>
+		<Grid Grid.Row="1" Margin="0 15 0 0">
+			<ScrollViewer VerticalScrollBarVisibility="Hidden" Height="400" >
+				<Grid>
+					<WrapPanel Orientation="Vertical">
+						<StackPanel Orientation="Horizontal" Spacing="30">
+							<components:Feed FeedName="john" FeedFullName="John Leak"
+								 LikeCount="12K" CommentCount="40"
+								 FeedImage="avares://InstagramReDesign/Assets/Feed Images/f1.jpg"
+								 FeedProfile="avares://InstagramReDesign/Assets/Profiles/a2.png"/>
+
+							<components:Feed FeedName="ricky3" FeedFullName="Rick Yelly"
+								 LikeCount="34K" CommentCount="103"
+								 FeedImage="avares://InstagramReDesign/Assets/Feed Images/f2.jpg"
+								 FeedProfile="avares://InstagramReDesign/Assets/Profiles/a3.png"/>
+
+							<components:Feed FeedName="12official" FeedFullName="Official"
+								 LikeCount="12K" CommentCount="40"
+								 FeedImage="avares://InstagramReDesign/Assets/Feed Images/f3.jpg"
+								 FeedProfile="avares://InstagramReDesign/Assets/Profiles/a4.png"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal" Spacing="30" Margin="0 30 0 0">
+							<components:Feed FeedName="ricardo" FeedFullName="Ricardo Sanchez"
+								 LikeCount="4k" CommentCount="19"
+								 FeedImage="avares://InstagramReDesign/Assets/Feed Images/f4.jpg"
+								 FeedProfile="avares://InstagramReDesign/Assets/Profiles/a5.png"/>
+
+							<components:Feed FeedName="patrick" FeedFullName="Patrick Bateman"
+								 LikeCount="63K" CommentCount="102"
+								 FeedImage="avares://InstagramReDesign/Assets/Feed Images/f5.jpg"
+								 FeedProfile="avares://InstagramReDesign/Assets/Profiles/a6.png"/>
+
+							<components:Feed FeedName="elon" FeedFullName="Elon Musk"
+								 LikeCount="12K" CommentCount="40"
+								 FeedImage="avares://InstagramReDesign/Assets/Feed Images/f6.jpg"
+								 FeedProfile="avares://InstagramReDesign/Assets/Profiles/a7.png"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal" Spacing="30" Margin="0 30 0 0">
+							<components:Feed FeedName="michale" FeedFullName="Michale"
+								 LikeCount="12K" CommentCount="40"
+								 FeedImage="avares://InstagramReDesign/Assets/Feed Images/f7.jpg"
+								 FeedProfile="avares://InstagramReDesign/Assets/Profiles/a8.png"/>
+
+							<components:Feed FeedName="john" FeedFullName="John Leak"
+								 LikeCount="12K" CommentCount="40"
+								 FeedImage="avares://InstagramReDesign/Assets/Feed Images/f8.jpg"
+								 FeedProfile="avares://InstagramReDesign/Assets/Profiles/a9.png"/>
+
+							<components:Feed FeedName="john" FeedFullName="John Leak"
+								 LikeCount="12K" CommentCount="40"
+								 FeedImage="avares://InstagramReDesign/Assets/Feed Images/f9.jpg"
+								 FeedProfile="avares://InstagramReDesign/Assets/Profiles/a10.png"/>
+						</StackPanel>
+					</WrapPanel>
+				</Grid>
+			</ScrollViewer>
+		</Grid>
+
+	</Grid>
+
+
+</UserControl>

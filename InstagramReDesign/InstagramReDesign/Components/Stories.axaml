@@ -1,0 +1,93 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             x:Class="InstagramReDesign.Components.Stories">
+
+	<Grid RowDefinitions="Auto,Auto">
+		<Grid Grid.Row="0" ColumnDefinitions="Auto,*,Auto">
+			<TextBlock Classes="h1" Grid.Column="0" Text="Stories"/>
+			<StackPanel Grid.Column="2" Spacing="5" Orientation="Horizontal" VerticalAlignment="Center">
+				<TextBlock Text="Watch all" Foreground="Black" FontSize="10" FontFamily="{StaticResource Gilroy-SemiBold}"/>
+				<Path Data="{StaticResource arrow}" Fill="Black"
+					  Stretch="Uniform" Height="8"/>
+			</StackPanel>
+		</Grid>
+		<Grid Grid.Row="1" Margin="0 15 0 0">
+			<StackPanel Orientation="Horizontal" Spacing="25">
+				<Button Classes="addStory" Width="50" Tag="Your Story">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a1.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="john">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a2.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="ricky3">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a3.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="12official">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a4.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="ricardo">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a5.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="patrick">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a6.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="elon">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a7.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="michale">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a8.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="sung_cho">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a9.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="roman_89">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a10.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="og_travis">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a11.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="bruce">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a12.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="lisa">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a13.png"/>
+					</Button.Background>
+				</Button>
+				<Button Classes="story" Width="50" Tag="alex">
+					<Button.Background>
+						<ImageBrush Source="avares://InstagramReDesign/Assets/Profiles/a14.png"/>
+					</Button.Background>
+				</Button>
+			</StackPanel>
+		</Grid>
+	</Grid>
+
+</UserControl>

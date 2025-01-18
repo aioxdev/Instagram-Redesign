@@ -1,0 +1,115 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\Feed Images\f1.jpg" />
+    <None Remove="Assets\Feed Images\f2.jpg" />
+    <None Remove="Assets\Feed Images\f3.jpg" />
+    <None Remove="Assets\Feed Images\f4.jpg" />
+    <None Remove="Assets\Feed Images\f5.jpg" />
+    <None Remove="Assets\Feed Images\f6.jpg" />
+    <None Remove="Assets\Feed Images\f7.jpg" />
+    <None Remove="Assets\Feed Images\f8.jpg" />
+    <None Remove="Assets\Feed Images\f9.jpg" />
+    <None Remove="Assets\Profiles\a1.png" />
+    <None Remove="Assets\Profiles\a10.png" />
+    <None Remove="Assets\Profiles\a11.png" />
+    <None Remove="Assets\Profiles\a12.png" />
+    <None Remove="Assets\Profiles\a13.png" />
+    <None Remove="Assets\Profiles\a14.png" />
+    <None Remove="Assets\Profiles\a15.png" />
+    <None Remove="Assets\Profiles\a2.png" />
+    <None Remove="Assets\Profiles\a3.png" />
+    <None Remove="Assets\Profiles\a4.png" />
+    <None Remove="Assets\Profiles\a5.png" />
+    <None Remove="Assets\Profiles\a6.png" />
+    <None Remove="Assets\Profiles\a7.png" />
+    <None Remove="Assets\Profiles\a8.png" />
+    <None Remove="Assets\Profiles\a9.png" />
+    <None Remove="Fonts\Gilroy-Black.ttf" />
+    <None Remove="Fonts\Gilroy-BlackItalic.ttf" />
+    <None Remove="Fonts\Gilroy-Bold.ttf" />
+    <None Remove="Fonts\Gilroy-BoldItalic.ttf" />
+    <None Remove="Fonts\Gilroy-ExtraBold.ttf" />
+    <None Remove="Fonts\Gilroy-ExtraBoldItalic.ttf" />
+    <None Remove="Fonts\Gilroy-Heavy.ttf" />
+    <None Remove="Fonts\Gilroy-HeavyItalic.ttf" />
+    <None Remove="Fonts\Gilroy-Light.ttf" />
+    <None Remove="Fonts\Gilroy-LightItalic.ttf" />
+    <None Remove="Fonts\Gilroy-Medium.ttf" />
+    <None Remove="Fonts\Gilroy-MediumItalic.ttf" />
+    <None Remove="Fonts\Gilroy-Regular.ttf" />
+    <None Remove="Fonts\Gilroy-RegularItalic.ttf" />
+    <None Remove="Fonts\Gilroy-SemiBold.ttf" />
+    <None Remove="Fonts\Gilroy-SemiBoldItalic.ttf" />
+    <None Remove="Fonts\Gilroy-Thin.ttf" />
+    <None Remove="Fonts\Gilroy-ThinItalic.ttf" />
+    <None Remove="Fonts\Gilroy-UltraLight.ttf" />
+    <None Remove="Fonts\Gilroy-UltraLightItalic.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\Feed Images\f1.jpg" />
+    <AvaloniaResource Include="Assets\Feed Images\f2.jpg" />
+    <AvaloniaResource Include="Assets\Feed Images\f3.jpg" />
+    <AvaloniaResource Include="Assets\Feed Images\f4.jpg" />
+    <AvaloniaResource Include="Assets\Feed Images\f5.jpg" />
+    <AvaloniaResource Include="Assets\Feed Images\f6.jpg" />
+    <AvaloniaResource Include="Assets\Feed Images\f7.jpg" />
+    <AvaloniaResource Include="Assets\Feed Images\f8.jpg" />
+    <AvaloniaResource Include="Assets\Feed Images\f9.jpg" />
+    <AvaloniaResource Include="Assets\Profiles\a1.png" />
+    <AvaloniaResource Include="Assets\Profiles\a10.png" />
+    <AvaloniaResource Include="Assets\Profiles\a11.png" />
+    <AvaloniaResource Include="Assets\Profiles\a12.png" />
+    <AvaloniaResource Include="Assets\Profiles\a13.png" />
+    <AvaloniaResource Include="Assets\Profiles\a14.png" />
+    <AvaloniaResource Include="Assets\Profiles\a15.png" />
+    <AvaloniaResource Include="Assets\Profiles\a2.png" />
+    <AvaloniaResource Include="Assets\Profiles\a3.png" />
+    <AvaloniaResource Include="Assets\Profiles\a4.png" />
+    <AvaloniaResource Include="Assets\Profiles\a5.png" />
+    <AvaloniaResource Include="Assets\Profiles\a6.png" />
+    <AvaloniaResource Include="Assets\Profiles\a7.png" />
+    <AvaloniaResource Include="Assets\Profiles\a8.png" />
+    <AvaloniaResource Include="Assets\Profiles\a9.png" />
+    <AvaloniaResource Include="Fonts\Gilroy-Black.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-BlackItalic.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-Bold.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-BoldItalic.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-ExtraBold.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-ExtraBoldItalic.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-Heavy.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-HeavyItalic.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-Light.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-LightItalic.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-Medium.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-MediumItalic.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-Regular.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-RegularItalic.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-SemiBold.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-SemiBoldItalic.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-Thin.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-ThinItalic.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-UltraLight.ttf" />
+    <AvaloniaResource Include="Fonts\Gilroy-UltraLightItalic.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AsyncImageLoader.Avalonia" Version="3.3.0" />
+    <PackageReference Include="Avalonia" Version="11.2.1" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.2.1" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.2.1" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.2.1" />
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.2.1">
+      <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+      <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

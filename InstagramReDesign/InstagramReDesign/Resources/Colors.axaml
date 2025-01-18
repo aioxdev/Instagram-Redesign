@@ -1,0 +1,17 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<SolidColorBrush x:Key="pr" Color="#F4123A"/>
+
+	<LinearGradientBrush x:Key="instagramGradient" StartPoint="0,30" EndPoint="30,0">
+		<GradientStop Offset="0.0" Color="#f9ce34"/>
+		<GradientStop Offset="0.5" Color="#ee2a7b"/>
+		<GradientStop Offset="1" Color="#6228d7"/>
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="storyGradient" StartPoint="0,30" EndPoint="30,0">
+		<GradientStop Offset="0" Color="#ee2a7b"/>
+		<GradientStop Offset="1" Color="#f9ce34"/>
+	</LinearGradientBrush>
+
+</ResourceDictionary>

@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:components="clr-namespace:InstagramReDesign.Components;assembly=InstagramReDesign"
+		mc:Ignorable="d" 
+        x:Class="InstagramReDesign.MainWindow"
+        Title="InstagramReDesign"
+		Width="900" Height="640"
+		Background="Transparent"
+		ExtendClientAreaChromeHints="NoChrome"
+		ExtendClientAreaTitleBarHeightHint="-1"
+		ExtendClientAreaToDecorationsHint="False"
+		SystemDecorations="None"
+		TransparencyLevelHint="AcrylicBlur"
+		WindowStartupLocation="CenterScreen">
+
+	<Border CornerRadius="18" Background="rgba(255,255,255,0.8)" ClipToBounds="True">
+		<Grid ColumnDefinitions="Auto,*">
+			<Grid Grid.Column="0" Width="63" Background="rgba(255,255,255,0.6)">
+				<components:NavBar/>
+			</Grid>
+			<Grid Grid.Column="1" RowDefinitions="Auto,Auto,Auto" Margin="48 20 48 0">
+				<components:TopBar Grid.Row="0"/>
+				<components:Stories Grid.Row="1" Margin="0 30 0 0"/>
+				<components:Feeds Grid.Row="2" Margin="0 30 0 0"/>
+			
+			</Grid>
+		</Grid>
+	</Border>
+	
+</Window>

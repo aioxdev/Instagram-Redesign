@@ -1,0 +1,55 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassName
+build_property.AvaloniaNameGeneratorAttachDevTools = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = InstagramReDesign
+build_property.ProjectDir = C:\Users\aioxd\source\repos\Youtube\InstagramReDesign\InstagramReDesign\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/Components/Feed.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/Components/Feeds.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/Components/NavBar.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/Components/Stories.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/Components/TopBar.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/Resources/Colors.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/Resources/Fonts.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/Resources/Icons.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/aioxd/source/repos/Youtube/InstagramReDesign/InstagramReDesign/Resources/Styles.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

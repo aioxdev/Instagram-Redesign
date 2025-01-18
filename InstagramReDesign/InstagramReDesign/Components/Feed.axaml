@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:asyncImageLoader="clr-namespace:AsyncImageLoader;assembly=AsyncImageLoader.Avalonia"
+			 mc:Ignorable="d" 
+             x:Class="InstagramReDesign.Components.Feed"
+			 x:Name="main" Width="220">
+
+	<Grid RowDefinitions="Auto,Auto">
+		<Border Grid.Row="0" ClipToBounds="True" Height="255" CornerRadius="10" Background="White">
+			<Image asyncImageLoader:ImageLoader.Source="{Binding ElementName=main,Path=FeedImage}"
+				   Stretch="UniformToFill"/>
+		</Border>
+		<Grid Grid.Row="1" ColumnDefinitions="Auto,*,Auto" Margin="0 15 0 0">
+			<Grid Grid.Column="0" ColumnDefinitions="Auto,Auto">
+				<Button Grid.Column="0" Classes="postProfile"
+						Width="25" Height="25">
+					<Button.Background>
+						<ImageBrush Source="{Binding ElementName=main,Path=FeedProfile}"/>
+					</Button.Background>
+				</Button>
+				<Grid Grid.Column="1" RowDefinitions="Auto,Auto" Margin="10 0 0 0">
+					<TextBlock Grid.Row="0" Text="{Binding ElementName=main,Path=FeedName}"
+							   FontSize="10" FontWeight="Medium" Foreground="Black"/>
+					<TextBlock Grid.Row="1" Text="{Binding ElementName=main,Path=FeedFullName}"
+					   FontSize="8" FontWeight="Medium" Foreground="Black"/>
+				</Grid>
+			</Grid>
+			<StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="15">
+				<StackPanel Orientation="Horizontal">
+					<ToggleButton Classes="like" Height="20" Width="20" Tag="12"/>
+					<TextBlock Text="{Binding ElementName=main,Path=LikeCount}" Foreground="Black"
+							   FontSize="10" VerticalAlignment="Center" FontWeight="SemiBold"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<ToggleButton Classes="message" Height="20" Width="20" Tag="12"/>
+					<TextBlock Text="{Binding ElementName=main,Path=CommentCount}" Foreground="Black"
+							   FontSize="10" VerticalAlignment="Center" FontWeight="SemiBold"/>
+				</StackPanel>
+			</StackPanel>
+		</Grid>
+	</Grid>
+	
+
+</UserControl>

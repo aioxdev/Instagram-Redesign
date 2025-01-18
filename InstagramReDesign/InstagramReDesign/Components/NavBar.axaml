@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InstagramReDesign.Components.NavBar" Width="62">
+	<Grid RowDefinitions="Auto,*,Auto" Margin="0 20 0 20">
+		<Grid Grid.Row="0">
+			<Path Classes="instagramLogo" Width="24" Height="24"/>
+		</Grid>
+		<Grid Grid.Row="1">
+			<StackPanel x:Name="navList" Orientation="Vertical" Spacing="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<ToggleButton Classes="navItem" Tag="{StaticResource home}" IsChecked="True" Checked="ToggleButton_Checked"/>
+				<ToggleButton Classes="navItem" Tag="{StaticResource cursor}" Checked="ToggleButton_Checked"/>
+				<ToggleButton Classes="navItem" Tag="{StaticResource explore}" Checked="ToggleButton_Checked"/>
+				<ToggleButton Classes="navItem" Tag="{StaticResource heart}" Checked="ToggleButton_Checked"/>
+			</StackPanel>
+		</Grid>
+		<Grid Grid.Row="2" Height="40">
+			<Button Classes="login" Tag="{StaticResource login}" HorizontalAlignment="Center"/>
+		</Grid>
+	</Grid>
+
+</UserControl>

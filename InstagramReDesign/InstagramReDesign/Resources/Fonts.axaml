@@ -1,0 +1,9 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<FontFamily x:Key="Gilroy-Black">avares://InstagramReDesign/Fonts/Gilroy-Black.ttf#Gilroy Black</FontFamily>
+	<FontFamily x:Key="Gilroy-Bold">avares://InstagramReDesign/Fonts/Gilroy-Bold.ttf#Gilroy Bold</FontFamily>
+	<FontFamily x:Key="Gilroy-Medium">avares://InstagramReDesign/Fonts/Gilroy-Medium.ttf#Gilroy Medium</FontFamily>
+	<FontFamily x:Key="Gilroy-SemiBold">avares://InstagramReDesign/Fonts/Gilroy-SemiBold.ttf#Gilroy SemiBold</FontFamily>
+
+</ResourceDictionary>

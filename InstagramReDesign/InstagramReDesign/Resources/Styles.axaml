@@ -1,0 +1,359 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Design.PreviewWith>
+		<Border Padding="20" Background="White">
+
+		</Border>
+	</Design.PreviewWith>
+
+	<Style Selector="ToggleButton.message">
+		<Setter Property="Template">
+			<ControlTemplate TargetType="ToggleButton">
+				<Grid Background="rgba(255,255,255,0.0001)">
+					<Path Data="{StaticResource message}"
+						  Stretch="Uniform"
+						  Width="{TemplateBinding Tag}"
+						  VerticalAlignment="Center"
+						  HorizontalAlignment="Center"/>
+				</Grid>
+			</ControlTemplate>
+		</Setter>
+		<Style Selector="^ /template/ Path">
+			<Setter Property="Fill" Value="rgba(255,255,255,0)"/>
+			<Setter Property="Stroke" Value="Black"/>
+			<Setter Property="StrokeThickness" Value="1"/>
+			<Setter Property="Transitions">
+				<Transitions>
+					<BrushTransition Property="Stroke" Duration="0:0:0.5" Easing="ExponentialEaseOut"/>
+					<BrushTransition Property="Fill" Duration="0:0:0.5" Easing="ExponentialEaseOut"/>
+					<TransformOperationsTransition Property="RenderTransform"
+												   Duration="0:0:0.5" Easing="ExponentialEaseOut"/>
+				</Transitions>
+			</Setter>
+		</Style>
+		<Style Selector="^:pointerover">
+			<Style Selector="^ /template/ Path">
+				<Setter Property="RenderTransform" Value="scale(1.1)"/>
+			</Style>
+		</Style>
+		<Style Selector="^:pressed">
+			<Style Selector="^ /template/ Path">
+				<Setter Property="RenderTransform" Value="scale(1)"/>
+			</Style>
+		</Style>
+	</Style>
+
+	<Style Selector="ToggleButton.like">
+		<Setter Property="Template">
+			<ControlTemplate TargetType="ToggleButton">
+				<Grid Background="rgba(255,255,255,0.0001)">
+					<Path Data="{StaticResource heart}"
+						  Stretch="Uniform"
+						  Width="{TemplateBinding Tag}"
+						  VerticalAlignment="Center"
+						  HorizontalAlignment="Center"/>
+				</Grid>
+			</ControlTemplate>
+		</Setter>
+		<Style Selector="^ /template/ Path">
+			<Setter Property="Fill" Value="rgba(255,255,255,0)"/>
+			<Setter Property="Stroke" Value="Black"/>
+			<Setter Property="StrokeThickness" Value="1"/>
+			<Setter Property="Transitions">
+				<Transitions>
+					<BrushTransition Property="Stroke" Duration="0:0:0.5" Easing="ExponentialEaseOut"/>
+					<BrushTransition Property="Fill" Duration="0:0:0.5" Easing="ExponentialEaseOut"/>
+					<TransformOperationsTransition Property="RenderTransform"
+												   Duration="0:0:0.5" Easing="ExponentialEaseOut"/>
+				</Transitions>
+			</Setter>
+		</Style>
+		<Style Selector="^:pointerover">
+			<Style Selector="^ /template/ Path">
+				<Setter Property="Stroke" Value="{StaticResource pr}"/>
+				<Setter Property="RenderTransform" Value="scale(1.1)"/>
+			</Style>
+		</Style>
+		<Style Selector="^:checked">
+			<Style Selector="^ /template/ Path">
+				<Setter Property="Stroke" Value="{StaticResource pr}"/>
+				<Setter Property="Fill" Value="{StaticResource pr}"/>
+			</Style>
+		</Style>
+	</Style>
+
+	<Style Selector="TextBlock.h1">
+		<Setter Property="Foreground" Value="Black"/>
+		<Setter Property="FontSize" Value="14"/>
+		<Setter Property="FontFamily" Value="{StaticResource Gilroy-Bold}"/>
+	</Style>
+
+	<Style Selector="Button.addStory">
+		<Setter Property="Template">
+			<ControlTemplate>
+				<Grid RowDefinitions="Auto,Auto" Background="rgba(255,255,255,0.0001)">
+					<Grid Grid.Row="0" Width="{TemplateBinding Width}" Height="{TemplateBinding Width}">
+						<Ellipse StrokeThickness="2" Stroke="rgba(0,0,0,0.15)"/>
+						<Grid Margin="4">
+							<Border ClipToBounds="True" CornerRadius="50">
+								<Ellipse Fill="{TemplateBinding Background}" RenderTransform="Scale(1.1)">
+									<Ellipse.Effect>
+										<BlurEffect Radius="5"/>
+									</Ellipse.Effect>
+								</Ellipse>
+							</Border>
+							<Path Data="{StaticResource plus}" Stroke="White" StrokeThickness="1.5"
+								  Stretch="Uniform" Width="12" StrokeJoin="Round"
+								  StrokeLineCap="Round"
+								  VerticalAlignment="Center"
+								  HorizontalAlignment="Center"/>
+						</Grid>
+					</Grid>
+					<Grid Grid.Row="1" HorizontalAlignment="Center" Margin="0 8 0 0">
+						<TextBlock Foreground="rgba(0,0,0,0.4)" Text="{TemplateBinding Tag}" FontSize="10"/>
+					</Grid>
+				</Grid>
+			</ControlTemplate>
+		</Setter>
+		<Setter Property="Transitions">
+			<Transitions>
+				<TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
+			</Transitions>
+		</Setter>
+		<Style Selector="^:pointerover">
+			<Setter Property="RenderTransform" Value="scale(1)"/>
+		</Style>
+
+	</Style>
+
+	<Style Selector="Button.story">
+		<Setter Property="Template">
+			<ControlTemplate>
+				<Grid RowDefinitions="Auto,Auto" Background="rgba(255,255,255,0.0001)">
+					<Grid Grid.Row="0" Width="{TemplateBinding Width}" Height="{TemplateBinding Width}">
+						<Ellipse StrokeThickness="2" Stroke="{StaticResource storyGradient}"/>
+						<Grid Margin="4">
+							<Border Background="{TemplateBinding Background}" CornerRadius="50">
+
+							</Border>
+						</Grid>
+					</Grid>
+					<Grid Grid.Row="1" HorizontalAlignment="Center" Margin="0 8 0 0">
+						<TextBlock Text="{TemplateBinding Tag}" FontSize="10" Foreground="Black"/>
+					</Grid>
+				</Grid>
+			</ControlTemplate>
+		</Setter>
+		<Setter Property="Transitions">
+			<Transitions>
+				<TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
+			</Transitions>
+		</Setter>
+		<Style Selector="^:pointerover">
+			<Setter Property="RenderTransform" Value="scale(1.1)"/>
+		</Style>
+		<Style Selector="^:pressed">
+			<Setter Property="RenderTransform" Value="scale(1)"/>
+		</Style>
+	</Style>
+
+	<Style Selector="Button.profile">
+		<Setter Property="Template">
+			<ControlTemplate>
+				<Grid>
+					<Ellipse StrokeThickness="2" Stroke="{StaticResource instagramGradient}" StrokeDashArray="1,1"/>
+					<Grid Margin="4">
+						<Border Background="{TemplateBinding Background}" CornerRadius="50">
+
+						</Border>
+					</Grid>
+				</Grid>
+			</ControlTemplate>
+		</Setter>
+		<Style Selector="^ /template/ Ellipse">
+			<Setter Property="Transitions">
+				<Transitions>
+					<TransformOperationsTransition Property="RenderTransform" Duration="0:0:1" Easing="QuarticEaseOut"/>
+				</Transitions>
+			</Setter>
+		</Style>
+		<Style Selector="^:pointerover">
+			<Style Selector="^ /template/ Ellipse">
+				<Setter Property="RenderTransform" Value="rotate(360deg)"/>
+			</Style>
+		</Style>
+		<Style Selector="^:left">
+
+		</Style>
+	</Style>
+
+	<Style Selector="Button.postProfile">
+		<Setter Property="Template">
+			<ControlTemplate>
+				<Grid>
+					<Ellipse StrokeThickness="2" Stroke="{StaticResource storyGradient}"/>
+					<Grid Margin="4">
+						<Border Background="{TemplateBinding Background}" CornerRadius="50">
+
+						</Border>
+					</Grid>
+				</Grid>
+			</ControlTemplate>
+		</Setter>
+		<Style Selector="^ /template/ Ellipse">
+			<Setter Property="Transitions">
+				<Transitions>
+					<TransformOperationsTransition Property="RenderTransform" Duration="0:0:1" Easing="QuarticEaseOut"/>
+				</Transitions>
+			</Setter>
+		</Style>
+		<Style Selector="^:pointerover">
+			<Style Selector="^ /template/ Ellipse">
+				<Setter Property="RenderTransform" Value="rotate(360deg)"/>
+			</Style>
+		</Style>
+		<Style Selector="^:left">
+
+		</Style>
+	</Style>
+
+
+	<Style Selector="Button.addPhoto">
+		<Setter Property="Template">
+			<ControlTemplate TargetType="Button">
+				<Border Background="{StaticResource pr}" CornerRadius="50">
+					<Grid ColumnDefinitions="Auto,Auto" Margin="6">
+						<Path Grid.Column="0" Data="{StaticResource add}" Stretch="Uniform"
+							  Fill="White"/>
+						<TextBlock Grid.Column="1" Text="Add photo"
+								   FontSize="10" FontWeight="Regular"
+								   Foreground="White"
+								   VerticalAlignment="Center"
+								   HorizontalAlignment="Center" Margin="8 0 8 0"/>
+					</Grid>
+				</Border>
+			</ControlTemplate>
+		</Setter>
+		<Style Selector="^:pointerover">
+
+		</Style>
+	</Style>
+
+	<Style Selector="TextBox.search">
+		<Setter Property="Padding" Value="0"/>
+		<Setter Property="Foreground" Value="Black"/>
+		<Setter Property="FontWeight" Value="SemiBold"/>
+		<Setter Property="FontSize" Value="10"/>
+		<Setter Property="Watermark" Value="Search"/>
+		<Setter Property="CornerRadius" Value="50"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+
+		<Style Selector="^ /template/ TextBlock#PART_Watermark">
+			<Setter Property="Foreground" Value="Black"/>
+			<Setter Property="Opacity" Value="0.3"/>
+		</Style>
+
+
+		<Style Selector="^ /template/ Border#PART_BorderElement">
+			<Setter Property="Background" Value="White"/>
+			<Setter Property="BorderThickness" Value="0"/>
+		</Style>
+
+		<Style Selector="^:pointerover">
+			<Style Selector="^ /template/ TextBlock#PART_Watermark">
+				<Setter Property="Foreground" Value="Black"/>
+				<Setter Property="Opacity" Value="0.3"/>
+			</Style>
+		</Style>
+	</Style>
+
+	<Style Selector="Path.instagramLogo">
+		<Setter Property="Width" Value="40"/>
+		<Setter Property="Height" Value="40"/>
+		<Setter Property="Stretch" Value="Uniform"/>
+		<Setter Property="Data" Value="{StaticResource instagram}"/>
+		<Setter Property="Fill" Value="{StaticResource instagramGradient}"/>
+
+	</Style>
+
+	<Style Selector="ToggleButton.navItem">
+		<Setter Property="Width" Value="30"/>
+		<Setter Property="Height" Value="30"/>
+		<Setter Property="Template">
+			<ControlTemplate TargetType="ToggleButton">
+				<Grid Background="rgba(255,255,255,0.0001)">
+					<Path x:Name="icon"
+						  Data="{TemplateBinding Tag}"
+						  StrokeThickness="1.5"
+						  VerticalAlignment="Center" HorizontalAlignment="Center"
+						  Stretch="Uniform"
+						  Height="14"/>
+					<Ellipse x:Name="notification"
+							 Fill="{StaticResource pr}" Width="4" Height="4" IsVisible="False"
+							 VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 5 0 0"/>
+				</Grid>
+			</ControlTemplate>
+		</Setter>
+		<Style Selector="^ /template/ Path">
+			<Setter Property="Stroke" Value="rgba(0,0,0,0.4)"/>
+			<Setter Property="Transitions">
+				<Transitions>
+					<BrushTransition Property="Stroke" Duration="0:0:0.5" Easing="QuarticEaseOut"/>
+				</Transitions>
+			</Setter>
+		</Style>
+		<Style Selector="^:pointerover">
+			<Style Selector="^ /template/ Path">
+				<Setter Property="Stroke" Value="Black"/>
+			</Style>
+		</Style>
+		<Style Selector="^:checked">
+			<Style Selector="^ /template/ Path">
+				<Setter Property="Stroke" Value="{StaticResource pr}"/>
+			</Style>
+			<Setter Property="IsEnabled" Value="False"/>
+		</Style>
+	</Style>
+
+	<Style Selector="Button.login">
+		<Setter Property="Width" Value="30"/>
+		<Setter Property="Height" Value="30"/>
+		<Setter Property="Template">
+			<ControlTemplate TargetType="ToggleButton">
+				<Grid Background="rgba(255,255,255,0.0001)">
+					<Path x:Name="icon"
+						  Data="{TemplateBinding Tag}"
+						  StrokeThickness="1.5"
+						  VerticalAlignment="Center" HorizontalAlignment="Center"
+						  Stretch="Uniform"
+						  Height="14"/>
+					<Ellipse x:Name="notification"
+							 Fill="{StaticResource pr}" Width="4" Height="4" IsVisible="False"
+							 VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 5 0 0"/>
+				</Grid>
+			</ControlTemplate>
+		</Setter>
+		<Style Selector="^ /template/ Path">
+			<Setter Property="Stroke" Value="rgba(0,0,0,0.4)"/>
+			<Setter Property="Transitions">
+				<Transitions>
+					<BrushTransition Property="Stroke" Duration="0:0:0.3" Easing="QuarticEaseOut"/>
+				</Transitions>
+			</Setter>
+		</Style>
+		<Style Selector="^:pointerover">
+			<Style Selector="^ /template/ Path">
+				<Setter Property="Stroke" Value="Black"/>
+			</Style>
+		</Style>
+		<Style Selector="^:pressed">
+			<Style Selector="^ /template/ Path">
+				<Setter Property="Stroke" Value="{StaticResource pr}"/>
+			</Style>
+		</Style>
+	</Style>
+
+
+
+
+</Styles>
